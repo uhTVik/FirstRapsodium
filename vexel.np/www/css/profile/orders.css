@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+@font-face {
+	font-family: Rubl;
+	src: url("/fonts/rouble.ttf");
+}
+
+div.ordlistholder {
+	margin-right: 30px;	
+}
+
+table.ordlist {
+	width: 100%;
+	border-spacing: 0;
+	border-top: 1px solid #ebf0f5;
+}
+
+table.ordlist tr {
+	font: 11pt 'Segoe UI Light';
+	text-align: center;
+}
+
+table.ordlist tr:FIRST-CHILD {
+	font: 10pt 'Segoe UI Light';
+	color: #aaa;
+}
+
+table.ordlist td {
+	padding: 10px 0;
+	max-width: 200px;
+	border-bottom: 1px solid #ebf0f5;
+}
+
+table.ordlist td:FIRST-CHILD {
+	text-align: left;
+}
+
+table.ordlist tr:FIRST-CHILD td:FIRST-CHILD {
+	text-align: center;
+}
+
+table.ordlist td:nth-of-type(even) {
+	background: #fafafa;
+}
+
+span.price {
+	font-weight: bold;
+}
+
+span.price:AFTER {
+	font-weight: normal;
+	font-family: 'Rubl';
+	content: "\0070";
+}

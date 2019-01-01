@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{QUERY_STRING} (.*)
+RewriteRule ^profile$ /user.php?id=0&%1
+
+RewriteCond %{QUERY_STRING} (.*)
+RewriteRule ^stuff([0-9]+)/?$ /catalog/stuff.php?stuff=$1&%1
+
+RewriteCond %{QUERY_STRING} (.*)
+RewriteRule ^catalog/([0-9]+)(/([0-9]+))?/?$ /catalog/onecat.php?cat=$1&subcat=$3&%1
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
+AddDefaultCharset UTF-8
+
+php_flag display_errors Off

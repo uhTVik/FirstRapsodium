@@ -1,0 +1,40 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+@font-face {
+	font-family: Rubl;
+	src: url("/fonts/rouble.ttf");
+}
+
+div.stuffs {
+	display: flex;
+	justify-content: space-around;
+}
+
+div.stuff {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	float: left;
+	border: 1px solid #ebf0f5;
+	padding: 10px 5px;
+	width: 300px;
+	height: 180px;
+}
+
+div.stuff h2.name {
+	font: 14pt 'Segoe UI Light';
+	padding: 0;
+	margin: 0 10px 10px 10px;
+	min-height: 50px;
+}
+
+div.stuff img {
+	height: 120px;
+}
+
+div.stuff div.aroundActions {
+	margin: 10px 10px 0 0;
+}

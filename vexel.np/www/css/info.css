@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+div.user ul li.prompt {
+	width: 90px;
+	margin-right: 40px;
+}
+
+div.main {
+	top: calc(50% - 105px);
+	left: calc(50% - 250px);
+	height: 210px;
+	width: 500px;
+}

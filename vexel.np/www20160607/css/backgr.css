@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+div.lefttrempel, div.righttrempel {	
+	position: fixed;
+	height: 100%;
+	background: white url(/images/bg.png) 0 0 repeat;
+	width: calc(50% - 550px);
+	opacity: 0.5;
+}
+
+div.lefttrempel {
+	left: 0;
+}
+
+div.righttrempel {
+	right: 0;
+}

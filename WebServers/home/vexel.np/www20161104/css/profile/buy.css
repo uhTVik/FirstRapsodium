@@ -1,0 +1,190 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+@font-face {
+	font-family: Rubl;
+	src: url("/fonts/rouble.ttf");
+}
+
+div.stuffs {
+	border-top: 1px solid #eee;
+	width: calc(100% - 250px);
+	float: left;
+}
+
+div.buystuff {
+	display: flex;
+	border-bottom: 1px solid #eee;
+	padding: 5px 10px;
+}
+
+div.buystuff img {
+	float: left;
+	height: 100px;
+}
+
+div.buystuff div.names {
+	flex: 1;
+	margin: 0 0 0 20px;
+}
+
+div.buystuff h2 {
+	padding: 0;
+	margin: 0;
+	font: 18pt 'Segoe UI Light';
+}
+
+div.buystuff h3 {
+	padding: 0;
+	margin: 0;
+	font: 15pt 'Segoe UI Light';
+}
+
+div.buystuff h4 {
+	padding: 0;
+	margin: 45px 0 0 0;
+	font: 12pt 'Segoe UI Light';
+	color: #aaa;
+}
+
+div.buystuff div.acti {
+	text-align: center;
+	margin: 0 5px 0 0;
+	padding: 0;
+}
+
+div.buystuff div.acti h2 {
+	font-weight: bold;
+}
+
+div.buystuff div.acti h2.price:AFTER {
+	font-weight: normal;
+	font-family: 'Rubl';
+	content: "\0070";
+}
+
+div.buystuff div.acti table {
+	width: 100%;
+	margin: 3px 0 0 0;
+	border-spacing: 0;
+	text-align: center;
+	font: 12pt 'Segoe UI Light';
+}
+
+div.buystuff div.acti table td {
+	width: 23px;
+	height: 18px;
+	padding-bottom: 5px;
+}
+
+div.buystuff div.acti table td {
+	color: #5582aa;
+	border: 1px solid #f4b126;
+}
+
+div.buystuff div.acti table td.medium {
+	color: black;
+	border-right: 0;
+	padding-bottom: 2px;
+	border-left: 0;
+}
+
+div.buystuff div.acti h4 {
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+div.itogo {
+	width: 230px;
+	float: left;
+	border: 1px solid black;
+	margin: 0 0 0 10px;
+}
+
+div.itogo table {
+	width: 100%;
+	border-spacing: 0;
+}
+
+div.itogo table td {
+	padding: 3px 10px;
+	border-bottom: 1px solid #aaa;
+	width: 100%;
+}
+
+div.itogo table td.del:HOVER {
+	background: #eee;
+}
+
+div.itogo table td img {
+	position: relative;
+	top: 3px;
+	height: 20px;
+	margin-right: 3px;
+}
+
+div.itogo table td.gr {
+	border-bottom: 1px solid #f4b126;
+}
+
+div.itogo table td.itogo1 {
+	font: 17pt 'Segoe UI Light';
+	font-weight: bold;
+}
+
+div.itogo table td.itogo2 {
+	font: 12pt 'Segoe UI Light';
+}
+
+div.itogo table h4.price {
+	margin: 0;
+	float: right;
+	padding: 3px 0 0 0;
+}
+
+div.itogo table h4.price:AFTER {
+	font-weight: normal;
+	font-family: 'Rubl';
+	content: "\0070";
+}
+
+div.itogo table td.itogo0 {
+	font: 20pt 'Segoe UI Light';
+	font-weight: bold;
+}
+
+div.itogo table h2.price {
+	margin: 0;
+	float: right;
+	padding: 3px 0 0 0;
+	font-size: 20pt;
+}
+
+div.itogo table h2.price:AFTER {
+	font-weight: normal;
+	font-family: 'Rubl';
+	content: "\0070";
+}
+
+div.itogo div.buttons {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div.itogo button {
+	background: white;
+	font: 17pt 'Segoe UI Light';
+	border: 1px solid #aaa;
+	margin: 3px;
+	text-align: center;
+}
+
+div.itogo button:HOVER {
+	background: #aaa;
+}

@@ -1,0 +1,15 @@
+X-Sendmail-Cmdline: sendmail.pl -t -i
+To: i.s.nepoklonov@yandex.ru
+Subject: Заявка
+X-PHP-Originating-Script: 0:join.php
+
+
+ФИО: 1
+Дата рождения:: 2
+Страна: 3
+Город, район, иной населенный пункт: 4
+Ссылка на профиль ВКонтакте или в других соцсетях: 6
+E-mail: 5
+другие навыки: ghjk
+Свет понравился: 214321
+

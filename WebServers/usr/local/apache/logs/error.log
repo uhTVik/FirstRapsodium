@@ -1,0 +1,15 @@
+[Mon Dec 31 18:05:07 2018] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Dec 31 18:05:07 2018] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Dec 31 18:05:07 2018] [notice] Apache/2.2.22 (Win32) mod_ssl/2.2.22 OpenSSL/1.0.1c PHP/5.3.13 configured -- resuming normal operations
+[Mon Dec 31 18:05:07 2018] [notice] Server built: Apr 20 2012 18:42:30
+[Mon Dec 31 18:05:07 2018] [notice] Parent: Created child process 8936
+[Mon Dec 31 18:05:07 2018] [notice] Disabled use of AcceptEx() WinSock2 API
+[Mon Dec 31 18:05:08 2018] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Dec 31 18:05:08 2018] [warn] Init: Name-based SSL virtual hosts only work for clients with TLS server name indication support (RFC 4366)
+[Mon Dec 31 18:05:08 2018] [notice] Child 8936: Child process is running
+[Mon Dec 31 18:05:08 2018] [notice] Child 8936: Acquired the start mutex.
+[Mon Dec 31 18:05:08 2018] [notice] Child 8936: Starting 25 worker threads.
+[Mon Dec 31 18:05:08 2018] [notice] Child 8936: Listening on port 443.
+[Mon Dec 31 18:05:08 2018] [notice] Child 8936: Listening on port 80.
+[Mon Dec 31 18:07:00 2018] [error] [client 127.0.0.1] File does not exist: Z:/home/kraski.np/www/json/gallery.json, referer: http://kraski.np/
+[Mon Dec 31 18:07:00 2018] [error] [client 127.0.0.1] script 'Z:/home/kraski.np/www/404.php' not found or unable to stat, referer: http://kraski.np/

@@ -1,0 +1,37 @@
+[
+   	{ 
+        "partner": "Министерство образования и молодежной политики Чувашской Республики",
+        "logo": "obrazov_cap_ru.png",
+        "site": "http://obrazov.cap.ru"
+    },
+    { 
+        "partner": "Министерство культуры, по делам национальностей и архивного дела Чувашской Республики",
+        "logo": "culture_cap_ru.png",
+        "site": "http://culture.cap.ru"
+    },
+    { 
+        "partner": "Национальная библиотека Чувашской Республики",
+        "logo": "nbchr_ru.png",
+        "site": "http://www.nbchr.ru/"
+    },
+    { 
+        "partner": "Объединение библиотек города Чебоксары",
+        "logo": "biblioteka21_ru.png",
+        "site": "http://www.biblioteka21.ru/"
+    },
+    { 
+        "partner": "Управление молодежной политики Чувашии",
+        "logo": "vk_com_chuvashyoung.png",
+        "site": "https://vk.com/chuvashyoung"
+    },
+    { 
+        "partner": "Объединение «Волонтеры СПб»",
+        "logo": "vk_com_volonteerspb.png",
+        "site": "https://vk.com/volonteerspb"
+    },
+    { 
+        "partner": "Объединение чувашей Санкт-Петербурга и Ленинградской области",
+        "logo": "vk_com_chuvashi_spb_i_lo.png",
+        "site": "https://vk.com/chuvashi_spb_i_lo"
+    }
+]

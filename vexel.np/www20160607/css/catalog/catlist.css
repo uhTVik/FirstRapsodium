@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+
+div.catlist {
+	margin: 0 20px 0 0;
+	padding: 5px 20px 10px 10px;
+	border-right: 1px solid #ebf0f5;
+	border-top: 1px solid #ebf0f5;
+	background: #f8fafc;
+	width: 240px;
+}
+
+div.catlist img.piccat {
+	opacity: 0.7;
+	position: relative;
+	float: left;
+	width: 23px;
+	height: 23px;
+	margin: 0 8px 0 -2px;
+}
+
+div.catlist h3, div.catlist h4 {
+	margin: 5px 0;
+	padding: 0;
+}
+
+div.catlist div.oneName {
+	margin-top: 3px;
+}
+
+div.catlist a {
+	text-decoration: none;
+}
+
+div.catlist a:HOVER {
+	color: #304961;
+}
+
+div.catlist a.here {
+	color: #f4b126;
+}
+
+div.catlist h3 a {
+	color: #5582aa;
+	font: 12pt 'Segoe UI Light';
+}
+
+div.catlist ul {
+	margin: 0;
+}
+
+div.catlist ul li {
+	display: block;
+}
+
+div.catlist h4 a {
+	color: #aaa;
+	font: 9pt 'Segoe UI Light';
+}

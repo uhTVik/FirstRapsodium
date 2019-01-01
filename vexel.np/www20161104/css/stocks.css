@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+div.stocklist {
+	margin: 40px 0 0 40px;
+	text-align: center;
+	text-align: left;
+}
+
+img.stock {
+	border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}

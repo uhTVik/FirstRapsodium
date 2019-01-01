@@ -1,0 +1,28 @@
+# This file is created by hosts update system
+# Please DO NOT modify and DO NOT delete it!
+# Following hosts will be deleted from 'hosts' on cleanup.
+
+127.0.0.1	www.subdomain.vexel.np
+127.0.0.1	www.backups.kraski.np
+127.0.0.1	subdomain.vexel.np
+127.0.0.1	backups.kraski.np
+127.0.0.1	www.lightwins.np
+127.0.0.1	www.tenebrae.np
+127.0.0.1	www.ad.pths.np
+127.0.0.1	www.localghost
+127.0.0.1	www.ns.pths.np
+127.0.0.1	www.np.pths.np
+127.0.0.1	www.kraski.np
+127.0.0.1	lightwins.np
+127.0.0.1	www.vexel.np
+127.0.0.1	www.pths.np
+127.0.0.1	www.svet.np
+127.0.0.1	tenebrae.np
+127.0.0.1	np.pths.np
+127.0.0.1	localghost
+127.0.0.1	ns.pths.np
+127.0.0.1	ad.pths.np
+127.0.0.1	kraski.np
+127.0.0.1	vexel.np
+127.0.0.1	svet.np
+127.0.0.1	pths.np

@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+h1.hcat {
+	margin: 0 0 10px 40px;
+	font: 28pt 'Segoe UI Light';
+}
+
+div.stuff:HOVER {
+	background: #f8fafc;
+	cursor: pointer;
+}
+
+div.stuff div.aroundActions {
+	float: right;
+	width: 140px;
+	text-align: center;
+}
+
+div.stuff div.aroundActions span.price {
+	position: relative;
+	font: 19pt 'Segoe UI Light';
+	font-weight: bold;
+}
+
+div.stuff div.aroundActions span.price:AFTER {
+	font: 19pt 'Rubl';
+	content: "\0070";
+}
+
+div.stuff div.aroundActions span.oldprice:AFTER {
+	font-size: 16pt;
+	color: #bbb;
+}
+
+div.stuff div.aroundActions span.oldprice {
+	height: 10px;
+	font: 16pt 'Segoe UI Light';
+	color: #aaa;
+}
+
+div.stuff div.aroundActions span.newprice {
+	top: -3px;
+}
+
+div.stuff div.aroundActions span.oldprice:before {
+	border-bottom: 3px solid rgba(100, 100, 100, 0.35);
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 50%;
+	transform: rotate(-7deg);
+}
+
+div.stuff div.aroundActions button.add {
+	margin: 2px 0 0 0;
+	width: 100px;
+	height: 30px;
+	border-radius: 0px;
+	background: white;
+	color: #444;
+	font: 18px 'Segoe UI Light';
+	border: none;
+	padding-bottom: 3px;
+	border: 1px solid #f4b126;
+	outline: none;
+}
+
+div.stuff div.aroundActions button.add:HOVER {
+	cursor: pointer;
+	background: #fdf3df;
+}
+
+div.stuff div.aroundActions button.add:ACTIVE {
+	background: #fcedcd;
+}

@@ -1,0 +1,75 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+div.contactTypes {
+	margin: 30px 0 0 40px;
+	width: 690px;
+	float: left;
+}
+
+div.type {
+	float: left;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 300px;
+	height: 170px;
+	border: 1px solid #d2dfec;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	margin: 0 40px 30px 0;
+}
+
+div.type h3, div.type h4 {
+	width: 100%;
+	text-align: center;
+	margin: 10px 0 5px 0;
+}
+
+div.type h3 {
+	height: 20px;
+	font: 18pt 'Segoe UI Light';
+	font-weight: bolder;
+}
+
+div.type h4 {
+	position: relative;
+	top: -10px;
+	height: 10px;
+	font: 14pt 'Segoe UI Light';
+}
+
+div.type div.postButtons {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 80%;
+}
+
+div.type img.postbutton {
+	cursor: pointer;
+	border-radius: 7px;
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+}
+
+div.type img.postbutton:HOVER {
+	opacity: 0.8;
+}
+
+div.type img.postbutton:ACTIVE {
+	opacity: 0.6;
+}
+
+div.advice {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	border: 1px solid #d2dfec;
+	float: left;
+	margin: 30px 0 0 0;
+	width: calc(100% - 732px);
+	height: 372px;
+}

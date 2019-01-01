@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+@font-face {
+	font-family: Rubl;
+	src: url("/fonts/rouble.ttf");
+}
+
+div.stocklist {
+	margin: 0px 0 0 40px;
+	text-align: center;
+}
+
+img.stock {
+	border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+div.stuffs {
+	display: flex;
+	justify-content: space-around;
+	padding: 0 20px;
+	flex-wrap: wrap;
+}
+
+div.stuff {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	border: 1px solid #ebf0f5;
+	padding: 10px 5px;
+	margin-bottom: 20px;
+	width: 310px;
+	height: 215px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+div.stuff h2.name {
+	font: 16pt 'Segoe UI Light';
+	padding: 0;
+	margin: 0 10px 0px 10px;
+	min-height: 50px;
+	width: 100%;
+	align-self: flex-start;
+}
+
+div.stuff img.photo {
+	border: 0px solid red;
+	max-height: 140px;
+	max-width: 140px;
+	margin: 0 0 7px 0;
+}
+
+div.stuff div.aroundActions {
+	border: 0px solid red;
+	margin: 0 0 0 0;
+}

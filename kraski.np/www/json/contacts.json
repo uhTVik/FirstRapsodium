@@ -1,0 +1,26 @@
+[
+  {
+    "name": "e-mail",
+    "logo": "ya_mail.png",
+    "link": "https://mail.yandex.ru",
+    "text": "arshinova@duma.gov.ru"
+  },
+  {
+    "name": "vk",
+    "logo": "vk.png",
+    "link": "https://vk.com/kraski_konkurs",
+    "text": "vk.com/kraski_konkurs"
+  },
+  {
+    "name": "facebook",
+    "logo": "fb.png",
+    "link": "https://www.facebook.com/kraskikonkurs",
+    "text": "facebook.com/kraskikonkurs"
+  },
+  {
+    "name": "instagram",
+    "logo": "inst.png",
+    "link": "https://instagram.com/kraski_chuvashi",
+    "text": "instagram.com/kraskikonkurs"
+  }
+]

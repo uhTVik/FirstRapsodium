@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+@font-face {
+	font-family: Rubl;
+	src: url("/fonts/rouble.ttf");
+}
+div.stocklist {
+	margin: 0px 0 0 40px;
+	text-align: center;
+}
+
+img.stock {
+	border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+div.stuffs {
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+}
+
+div.stuff {
+	position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.0);
+	border: 1px solid #ebf0f5;
+	margin: 0 -1px -1px 0;
+	padding: 10px 5px;
+	width: 270px;
+	height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div.stuff h2.name {
+	font: 14pt 'Segoe UI Light';
+	padding: 0;
+	margin: 0 10px 10px 10px;
+	min-height: 50px;
+	width: 100%;
+}
+
+div.stuff div.photo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	width: 120px;
+    border: 0px solid green;
+}
+
+div.stuff div.photo img.photo {
+	max-height: 100%;
+	max-width: 100%;
+    border: 0px solid red;
+}
+
+div.stuff div.aboutaround {
+	display: flex;
+	height: 120px;
+	align-items: flex-end;
+}
+
+div.stuff div.aroundActions {
+	border: 0px solid red;
+	margin: 0 5px 0 0;
+}
+
+img.close {
+	margin: 0 7px;
+	position: absolute;
+	right: 0;
+	opacity: 0;
+}
+
+img.close:HOVER {
+	cursor: pointer;
+}

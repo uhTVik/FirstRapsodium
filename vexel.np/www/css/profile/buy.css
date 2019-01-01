@@ -1,0 +1,239 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+@font-face {
+	font-family: Rubl;
+	src: url("/fonts/rouble.ttf");
+}
+
+div.stuffs {
+	border-top: 1px solid #f3f3f3;
+	width: calc(100% - 260px - 1px);
+	float: left;
+}
+
+div.buystuff {
+	display: flex;
+	border-bottom: 1px solid #f3f3f3;
+	padding: 5px 10px;
+}
+
+div.stuffimgdiv {
+	float: left;
+	min-width: 70px;
+	min-height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+div.buystuff img {
+	max-width: 70px;
+	max-height: 100px;
+}
+
+div.buystuff div.names {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 0 20px;
+	width: 100%;
+}
+
+div.buystuff h2 {
+	padding: 0;
+	margin: 0;
+	font: 17pt 'Segoe UI Light';
+}
+
+div.buystuff h3 {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	font: 15pt 'Segoe UI Light';
+}
+
+div.buystuff h4 {
+	padding: 0;
+	margin: 0 0 2px 0;
+	align-self: flex-end;
+	font: 12pt 'Segoe UI Light';
+	color: #aaa;
+}
+
+div.buystuff div.acti {
+	width: 110px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	text-align: center;
+	margin: 0 2px 0 0;
+	padding: 0;
+}
+
+div.buystuff div.acti h2 {
+	font-weight: bold;
+}
+
+div.buystuff div.acti h2.price:AFTER {
+	font-weight: normal;
+	font-family: 'Rubl';
+	content: "\0070";
+}
+
+div.buystuff div.acti table {
+	width: 81px;
+	margin: 7px 0 0 0;
+	border-spacing: 0;
+	text-align: center;
+	font: 12pt 'Segoe UI Light';
+	user-select: none;
+}
+
+div.buystuff div.acti table td {
+	width: 33.333%;
+	height: 18px;
+	color: #999;
+}
+
+div.buystuff div.acti table td.notmedium {
+	padding-bottom: 5px;
+	background: rgba(230, 230, 230, 0.20);
+	cursor: pointer;
+}
+
+div.buystuff div.acti table td.notmedium:HOVER {
+	background: rgba(230, 230, 230, 0.40);
+}
+
+div.buystuff div.acti table td.notmedium:ACTIVE {
+	background: rgba(230, 230, 230, 0.70);
+}
+
+div.buystuff div.acti table td.medium {
+	padding-bottom: 2px;
+	background: white;
+	border-right: 1px solid rgba(230, 230, 230, 1);
+	border-left: 1px solid rgba(230, 230, 230, 1);
+}
+
+div.buystuff div.acti h4 {
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+div.itogo {
+	width: 240px;
+	float: left;
+	border: 1px solid #f3f3f3;
+	border: none;
+	margin: 0 0 0 10px;
+}
+
+div.itogo table {
+	width: 100%;
+	margin-left: 15px;
+	border-spacing: 0;
+	border-left: 1px solid #eee;
+}
+
+div.itogo table td {
+	padding: 5px 10%;
+	width: 100%;
+	font: 17pt 'Segoe UI Light';
+	font-weight: bold;
+}
+
+div.itogo table h2.price {
+	margin: 0;
+	padding: 3px 0 0 0;
+	font-size: 17pt;
+	display: inline;
+}
+
+div.itogo table h2.price:AFTER {
+	font-weight: normal;
+	font-family: 'Rubl';
+	content: "\0070";
+}
+
+div.itogo table .discount-itogo {
+	font-size: 15pt !important;
+	color: #aaa;
+}
+
+div.itogo table td.discount-itogo {
+	font-weight: bold;
+}
+
+div.itogo table h2.discount-itogo {
+	font-weight: bold;
+}
+
+div.itogo div.buttons {
+	margin: 0;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div.itogo button {
+	background: white;
+	font: 15pt 'Segoe UI Light';
+	margin: 3px 0;
+	text-align: center;
+	width: 100%;
+	padding-bottom: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+div.itogo button.buy {
+	border: 1px solid #f4b126;
+}
+
+div.itogo button.buyc {
+	border: 1px solid #ccc;
+}
+
+div.itogo button.buy:HOVER {
+	background: #fdf3df;
+}
+
+div.itogo button.buyc:HOVER {
+	background: #eee;
+}
+
+div.itogo button.buy:ACTIVE {
+	background: #fcedcd;
+}
+
+div.itogo button.buyc:ACTIVE {
+	background: #ddd;
+}
+
+
+div.itogo div.promocodeField {
+	font: 12pt 'Segoe UI Light';
+	overflow-y: auto;
+	overflow-x: hidden;
+	min-height: 25px;
+	outline: none;
+	resize: none;
+	padding: 5px 0px 0px;
+	margin: 0;
+	word-wrap: break-word;
+	border-bottom: 1px solid #d2dfec;
+	align-self: flex-end;
+	cursor: text;
+}
+
+div.itogo div.promocodeFieldEMPTY:AFTER {
+	content: 'Введите промо-код...';
+	color: #aaa;
+}

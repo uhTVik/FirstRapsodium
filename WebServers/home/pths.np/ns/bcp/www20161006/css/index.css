@@ -1,0 +1,30 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#auth {
+	box-shadow: 0 0 10px #aaa;
+	padding: 20px;
+	text-align: center;
+}
+
+#title {
+	font: 50pt 'Gabriola';
+}
+
+.field.top {
+	border-radius: 3px 3px 0 0;
+	width: 250px;
+}
+
+.field.bottom {
+	border-radius: 0 0 3px 3px;
+	width: 250px;
+	margin-top: -1px;
+}
+
+#auth button {
+	margin-top: 18px;
+}

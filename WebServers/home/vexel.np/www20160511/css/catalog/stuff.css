@@ -1,0 +1,179 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+@font-face {
+	font-family: Rubl;
+	src: url("/fonts/rouble.ttf");
+}
+
+div.page {
+	display: flex;
+	justify-content: space-around;
+}
+
+div.maincat {
+	float: left;
+	margin-top: 20px;
+	display: flex;
+}
+
+div.stuffpage {
+	flex: 1;
+	margin-top: 20px;
+	float: left;
+}
+
+div.topstuff {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div.mainStuffDiv {
+	text-align: center;
+}
+
+div.mainStuffDiv span.code {
+	margin-left: -3px;
+	width: 100%;
+	margin-right: 5px;
+	font: 10pt 'Segoe UI Light';
+	color: #aaa;
+}
+
+div.mainStuffDiv span.code:AFTER {
+	margin-left: 10px;
+	color: #aaa;
+	content: "|";
+}
+
+div.mainStuffDiv div.rating {
+	display: inline;
+	position: relative;
+	top: 2px;
+}
+
+div.mainStuffDiv div.rating img {
+	height: 10pt;
+}
+
+div.mainStuffDiv span.comments a:HOVER {
+	color: #888;
+}
+
+div.mainStuffDiv span.comments a:ACTIVE {
+	color: black;
+}
+
+div.mainStuffDiv span.comments {
+	font: 10pt 'Segoe UI Light';
+}
+
+div.mainStuffDiv span.comments a {
+	color: #aaa;
+}
+
+div.mainStuffDiv span.comments:BEFORE {
+	margin-left: 6px;
+	margin-right: 10px;
+	color: #aaa;
+	content: "|";
+}
+
+div.mainStuffImageDiv {
+	border: 0px solid #eee;
+	float: left;
+	display: flex;
+	width: 300px;
+	height: 300px;
+}
+
+div.zoombox {
+	position: absolute;
+	opacity: 0;
+	background: rgba(190,206,222,0.3);
+	width: 10px;
+	height: 10px;
+}
+
+img.mainStuffImage {
+	align-self: center;
+	margin: auto;
+	max-width: 270px;
+	max-height: 270px;
+}
+
+div.functInfo {
+	float: left;
+	height: 400px;
+	width: 450px;
+}
+
+h3.name {
+	margin: 0px 0 10px 0px;
+	font: 17pt 'Segoe UI Light';
+}
+
+div.bigStuffImageDiv {
+	display: none;
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	overflow: hidden;
+	opacity: 0;
+	z-index: 1;
+}
+
+img.bigStuffImage {
+	position: relative;
+	width: auto;
+}
+
+div.functInfo span.newprice, div.functInfo span.newprice:AFTER {
+	font-size: 20pt;
+}
+
+div.functInfo span.oldprice, div.functInfo span.oldprice:AFTER {
+	font-size: 20pt;	
+	color: #bbb;
+}
+
+div.functInfo span.price {
+	position: relative;
+	font-family: 'Segoe UI Light';
+	font-weight: bold;
+}
+
+div.functInfo span.price:AFTER {
+	font-weight: normal;
+	font-family: 'Rubl';
+	content: "\0070";
+}
+div.functInfo span.oldprice {
+	margin-right: 20px;
+	height: 10px;
+}
+
+div.functInfo span.oldprice:before {
+	border-bottom: 3px solid rgba(100, 100, 100, 0.35);
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 50%;
+	transform: rotate(-10deg);
+}
+
+div.functInfo div.rating {
+	font: 12pt 'Segoe UI Light';
+	display: inline;
+}
+
+div.functInfo div.rating img {
+	position: relative;
+	top: 1px;
+	height: 10pt;
+}

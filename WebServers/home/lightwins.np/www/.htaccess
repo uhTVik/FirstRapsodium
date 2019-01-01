@@ -1,0 +1,27 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{QUERY_STRING} (.*)
+RewriteRule ^join$ /?page=0&%1
+RewriteRule ^contacts$ /?page=1&%1
+RewriteRule ^events$ /?page=2&%1
+RewriteRule ^faq$ /?page=3&%1
+RewriteRule ^materials$ /?page=4&%1
+RewriteRule ^plan$ /?page=5&%1
+RewriteRule ^ideo$ /?page=6&%1
+RewriteRule ^about$ /?page=7&%1
+RewriteRule ^conf$ /?page=8&%1
+RewriteRule ^ideo/([0-9]+)$ /?page=6&ideochap=$1%1
+
+RewriteCond %{QUERY_STRING} (.*)
+RewriteRule ^stuff([0-9]+)/?$ /catalog/stuff.php?stuff=$1&%1
+
+RewriteCond %{QUERY_STRING} (.*)
+RewriteRule ^catalog/([0-9]+)(/([0-9]+))?/?$ /catalog/onecat.php?cat=$1&subcat=$3&%1
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
+AddDefaultCharset utf8
+
+php_flag display_errors Off

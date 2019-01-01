@@ -1,0 +1,323 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: Segoe UI Light;
+	src: url("/fonts/segoeuil.ttf");
+}
+
+@font-face {
+	font-family: Rubl;
+	src: url("/fonts/rouble.ttf");
+}
+
+div.page {
+	display: flex;
+}
+
+div.maincat {
+	float: left;
+	margin-top: 20px;
+	display: flex;
+}
+
+div.stuffpage {
+	flex: 1;
+	margin-top: 20px;
+	float: left;
+}
+
+div.topstuff {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div.mainStuffDiv {
+	padding-top: 8px;
+	text-align: center;
+}
+
+div.mainStuffDiv span.code {
+	margin-left: -3px;
+	width: 100%;
+	margin-right: 5px;
+	font: 10pt 'Segoe UI Light';
+	color: #aaa;
+}
+
+div.mainStuffDiv span.code:AFTER {
+	margin-left: 10px;
+	color: #aaa;
+	content: "|";
+}
+
+div.mainStuffDiv div.rating {
+	display: inline;
+	position: relative;
+	top: 2px;
+}
+
+div.mainStuffDiv div.rating img {
+	height: 10pt;
+}
+
+div.mainStuffDiv span.comments a:HOVER {
+	color: #888;
+}
+
+div.mainStuffDiv span.comments a:ACTIVE {
+	color: black;
+}
+
+div.mainStuffDiv span.comments a {
+	font: 10pt 'Segoe UI Light';
+	color: #aaa;
+}
+
+div.mainStuffDiv span.comments:BEFORE {
+	margin: 0 10px 0 6px;
+	color: #aaa;
+	content: "|";
+}
+
+div.mainStuffImageDiv {
+	float: left;
+	display: flex;
+	width: 300px;
+	height: 300px;
+}
+
+div.zoombox {
+	position: absolute;
+	opacity: 0;
+	background: rgba(190,206,222,0.3);
+	width: 10px;
+	height: 10px;
+}
+
+img.mainStuffImage {
+	align-self: center;
+	margin: auto;
+	max-width: 270px;
+	max-height: 270px;
+}
+
+div.functInfo {
+	float: left;
+	height: 300px;
+	width: 450px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.whiteList {
+	position: absolute;
+	background: white;
+	height: 400px;
+	width: 450px;
+	display: none;
+	z-index: 1;
+}
+
+div.leftFuncDiv, div.rightFuncDiv {
+	text-align: center;
+}
+
+h3.name {
+	margin: 0;
+	font: 17pt 'Segoe UI Light';
+}
+
+div.bigStuffImageDiv {
+	display: none;
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	opacity: 0;
+	z-index: 1;
+}
+
+img.bigStuffImage {
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+div.functInfo div.price {
+	text-align: center;
+}
+
+div.functInfo span.newprice, div.functInfo span.newprice:AFTER {
+	top: -5px;
+	font-size: 24pt;
+}
+
+div.functInfo span.oldprice, div.functInfo span.oldprice:AFTER {
+	font-size: 19pt;	
+	color: #bbb;
+}
+
+div.functInfo span.price {
+	position: relative;
+	font-family: 'Segoe UI Light';
+	font-weight: bold;
+}
+
+div.functInfo span.price:AFTER {
+	font-weight: normal;
+	font-family: 'Rubl';
+	content: "\0070";
+}
+
+div.functInfo span.oldprice:before {
+	border-bottom: 3px solid rgba(100, 100, 100, 0.35);
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 50%;
+	transform: rotate(-7deg);
+}
+
+div.functInfo button.add {
+	margin: -5px 0 -1px 0;
+	width: 110px;
+	height: 35px;
+	border-radius: 0px;
+	background: white;
+	color: #444;
+	font: 20px 'Segoe UI Light';
+	border: none;
+	padding-bottom: 10px;
+	border: 1px solid #f4b126;
+	outline: none;
+}
+
+div.functInfo button.add:HOVER {
+	cursor: pointer;
+	background: #fdf3df;
+}
+
+div.functInfo button.add:ACTIVE {
+	background: #fcedcd;
+}
+
+div.functInfo img.picbutton {
+	cursor: pointer;
+	margin: 3px 0 0 0;
+	width: 30px;
+	height: 30px;
+	opacity: 0.4;
+}
+
+div.functInfo img.picbutton:hover {
+	opacity: 0.7;
+}
+
+div.functInfo img.picbutton:active {
+	opacity: 1;
+}
+
+div.functInfo div.rightFuncDiv {
+	align-self: center;
+}
+
+div.functInfo div.rightFuncDiv ul {
+	float: right;
+	margin: 0;
+	padding-left: 20px;
+	font: 12pt 'Segoe UI Light';
+}
+
+div.functInfo div.rightFuncDiv ul li {
+	display: block;
+	color: #888;
+}
+
+div.functInfo div.rightFuncDiv ul li:BEFORE {
+	content: "\2022\205f\205f";
+}
+
+div.functInfo div.leftFuncDiv {
+	flex: 2;
+	display: block;
+	text-align: left;
+	align-self: center;
+}
+
+div.functInfo div.leftFuncDiv table {
+	height: 80%;
+	padding: 0 40px 0 0;
+	border-spacing: 1px;
+	font: 9.5pt 'Segoe UI Light';
+}
+
+div.functInfo div.leftFuncDiv table td {
+	border-bottom: 1px dotted #ddd;
+}
+
+div.functInfo div.leftFuncDiv table tr.lasttr td {
+	border-bottom: 0;
+}
+
+div.functInfo div.leftFuncDiv table td.qst {
+	width: 121px;
+	color: #aaa;
+}
+
+div.functInfo div.leftFuncDiv table td.ans {
+	padding-left: 0px;
+}
+
+div.photos {
+	margin-top: 300px;
+	width: 300px;
+	height: 44px;
+	padding: 2px 0;
+	border: 1px solid #aaa;
+	display: flex;
+	justify-content: space-around;
+}
+
+div.photos img {
+	margin: auto;
+	max-width: 40px;
+	max-height: 40px;
+}
+
+div.infoTypes {
+	position: relative;
+	border-bottom: 1px solid #ebebeb;
+	border-top: 0px solid #ebebeb;
+	background-color: #f8f8f8;
+	background-color: rgba(0,0,0,0);
+}
+
+div.infoTypes ul {
+	margin: 0 0 0 6px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+div.infoTypes ul li {
+	padding: 0px 40px 0px 0px;
+	display: inline;
+}
+
+div.infoTypes ul li a {
+	color: #aaa;
+	text-decoration: none;
+	font: 10pt 'Segoe UI Light';
+}
+
+div.infoTypes ul li a:hover{
+	color: #666;
+}
+
+div.infoTypes ul li a:active{
+	color: #222;
+}
+
+div.infoTypes ul li a.here {
+	color: #f4b126;
+}
